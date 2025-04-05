@@ -1,71 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nice Fashion Tailors - Custom Clothing & Alterations</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nice Fashion Tailors - Custom Clothing & Alterations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      background-color: #ff5733;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #ffe066;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #home {
+      background-color: #66cc99;
+      color: white;
+    }
+
+    #services {
+      background: linear-gradient(135deg, #f6f9fc, #e3f2fd);
+      color: #333;
+    }
+
+    .service-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .service {
+      background: linear-gradient(135deg, #ffffff, #dfe9f3);
+      color: #333;
+      padding: 1rem;
+      width: 220px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .service img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .service:hover {
+      transform: scale(1.05) rotateX(3deg);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    #add-image {
+      background: linear-gradient(135deg, #fefcea, #f1da36);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    #add-image form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    #add-image input, #add-image textarea {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    #add-image button {
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #add-image button:hover {
+      background-color: #27ae60;
+    }
+
+    #about {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    #contact {
+      background-color: #9b59b6;
+      color: white;
+    }
+
+    footer {
+      background-color: #2ecc71;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Nice Fashion Trailors</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Google Custom Search Bar -->
-        <div class="search-bar">
-            <script async src="https://cse.google.com/cse.js?cx=b411e288617d147b9">
-</script>
-<div class="gcse-search"></div>
-    </header>
 
-    <section id="home">
-        <h2>Welcome to Nice Fashion</h2>
-        <p>Your one-stop shop for custom clothing and expert alterations.</p>
-    </section>
+  <header>
+    <h1>Nice Fashion Tailors</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="services">
+  <section id="home">
+    <h2>Welcome to Nice Fashion</h2>
+    <p>Your one-stop shop for custom clothing and expert alterations.</p>
+  </section>
+
+  <section id="services">
     <h2>Our Services</h2>
-    <div class="service-container">
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1600185365529-3976c4e88e1d?auto=format&fit=crop&w=400&q=80" alt="Custom Tailoring">
-            <h3>Custom Tailoring</h3>
-            <p>Perfect fits tailored just for you.</p>
-        </div>
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1621605819403-6c5b4d3c2a42?auto=format&fit=crop&w=400&q=80" alt="Style Consultation">
-            <h3>Style Consultation</h3>
-            <p>Professional advice to elevate your look.</p>
-        </div>
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1584036561584-b03c19da874c?auto=format&fit=crop&w=400&q=80" alt="Jacket Repairs">
-            <h3>Jacket Repairs</h3>
-            <p>Bring your old favorites back to life.</p>
-        </div>
-        <div class="service">
-            <img src="https://images.unsplash.com/photo-1593032457869-cabf96dc0b2d?auto=format&fit=crop&w=400&q=80" alt="Seasonal Wardrobe">
-            <h3>
+    <div class="service-container" id="defaultServices">
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1600185365529-3976c4e88e1d?auto=format&fit=crop&w=400&q=80" alt="Custom Tailoring">
+        <h3>Custom Tailoring</h3>
+        <p>Perfect fits tailored just for you.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1621605819403-6c5b4d3c2a42?auto=format&fit=crop&w=400&q=80" alt="Style Consultation">
+        <h3>Style Consultation</h3>
+        <p>Professional advice to elevate your look.</p>
+      </div>
+    </div>
+  </section>
 
+  <section id="add-image">
+    <h2>Add a Custom Service Image</h2>
+    <form id="imageForm">
+      <input type="text" id="imageURL" placeholder="Paste image URL from Google here" required>
+      <input type="text" id="serviceTitle" placeholder="Service Title" required>
+      <textarea id="serviceDesc" placeholder="Service Description" required></textarea>
+      <button type="submit">Add Image</button>
+    </form>
+    <div id="customServices" class="service-container"></div>
+  </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>With over 20 years of experience, Nice Fashion brings craftsmanship and precision to every stitch. We pride ourselves on quality and customer satisfaction.</p>
-    </section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>With over 20 years of experience, Nice Fashion brings craftsmanship and precision to every stitch. We pride ourselves on quality and customer satisfaction.</p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: khudabuxkhoso3498@gmail.com</p>
-        <p>Phone: +92 306-3498082</p>
-        <p>Address: Kandiaro, Sindh, Pakistan</p>
-    </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: khudabuxkhoso3498@gmail.com</p>
+    <p>Phone: +92 306-3498082</p>
+    <p>Address: Kandiaro, Sindh, Pakistan</p>
+  </section>
 
-    <footer>
-        <p>© 2025 Nice Fashion Tailors. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>© 2025 Nice Fashion Tailors. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("imageForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const imageUrl = document.getElementById("imageURL").value;
+      const title = document.getElementById("serviceTitle").value;
+      const desc = document.getElementById("serviceDesc").value;
+      const container = document.getElementById("customServices");
+
+      const newService = document.createElement("div");
+      newService.className = "service";
+      newService.innerHTML = `
+        <img src="${imageUrl}" alt="${title}">
+        <h3>${title}</h3>
+        <p>${desc}</p>
+      `;
+
+      container.appendChild(newService);
+      document.getElementById("imageForm").reset();
+    });
+  </script>
+
 </body>
 </html>

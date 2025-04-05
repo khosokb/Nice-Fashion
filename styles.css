@@ -3,20 +3,21 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f0f4f8; /* Light blue-gray background for the whole page */
+    background: linear-gradient(135deg, #e0f7fa, #f0f4f8); /* Soft gradient background */
 }
 
 header {
-    background-color: #ff5733; /* Bright orange header */
+    background: linear-gradient(135deg, #ff6f61, #ff5733); /* Gradient orange */
     color: white;
     text-align: center;
     padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 3D shadow */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the title */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Stronger shadow for 3D effect */
 }
 
 nav ul {
@@ -33,28 +34,32 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 nav ul li a:hover {
-    color: #ffe066; /* Light yellow on hover */
+    color: #ffe066;
 }
 
 section {
     padding: 2rem;
     text-align: center;
+    perspective: 1000px; /* Add perspective for 3D look */
 }
 
 #home {
-    background-color: #66cc99; /* Fresh green for the welcome section */
+    background: linear-gradient(135deg, #66cc99, #2ecc71); /* Green gradient */
     color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #home h2 {
     font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 #products {
-    background-color: #f9e79f; /* Soft yellow for the products section */
+    background: linear-gradient(135deg, #fdfbfb, #f9e79f); /* Subtle soft yellow gradient */
 }
 
 .product-container {
@@ -65,17 +70,19 @@ section {
 }
 
 .product {
-    background-color: #3498db; /* Bright blue for each product box */
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient */
     color: white;
     padding: 1rem;
     width: 200px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s; /* Add a hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 3D shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
 }
 
 .product:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05) rotateX(5deg) rotateY(5deg); /* 3D hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
 .product h3 {
@@ -84,21 +91,24 @@ section {
 }
 
 #about {
-    background-color: #e74c3c; /* Bold red for the about section */
+    background: linear-gradient(135deg, #e74c3c, #c0392b); /* Red gradient */
     color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #contact {
-    background-color: #9b59b6; /* Vibrant purple for the contact section */
+    background: linear-gradient(135deg, #9b59b6, #8e44ad); /* Purple gradient */
     color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 footer {
-    background-color: #2ecc71; /* Lively green footer */
+    background: linear-gradient(135deg, #2ecc71, #27ae60); /* Green gradient */
     color: white;
     text-align: center;
     padding: 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Shadow for 3D effect */
 }

@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8; /* Light blue-gray background for the whole page */
 }
 
 header {
-    background-color: #333;
+    background-color: #ff5733; /* Bright orange header */
     color: white;
     text-align: center;
     padding: 1rem;
@@ -15,6 +15,8 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle shadow to the title */
 }
 
 nav ul {
@@ -28,16 +30,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ddd;
-}
-
-.search-bar {
-    margin-top: 1rem;
+    color: #ffe066; /* Light yellow on hover */
 }
 
 section {
@@ -46,30 +45,56 @@ section {
 }
 
 #home {
-    background-color: #e0e0e0;
+    background-color: #66cc99; /* Fresh green for the welcome section */
+    color: white;
 }
 
-.service-container {
+#home h2 {
+    font-size: 2rem;
+}
+
+#products {
+    background-color: #f9e79f; /* Soft yellow for the products section */
+}
+
+.product-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.service {
-    background-color: white;
+.product {
+    background-color: #3498db; /* Bright blue for each product box */
+    color: white;
     padding: 1rem;
     width: 200px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Add a hover effect */
 }
 
-#about, #contact {
-    background-color: #fff;
+.product:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+#about {
+    background-color: #e74c3c; /* Bold red for the about section */
+    color: white;
+}
+
+#contact {
+    background-color: #9b59b6; /* Vibrant purple for the contact section */
+    color: white;
 }
 
 footer {
-    background-color: #333;
+    background-color: #2ecc71; /* Lively green footer */
     color: white;
     text-align: center;
     padding: 1rem;

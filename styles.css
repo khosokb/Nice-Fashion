@@ -58,36 +58,51 @@ section {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
 
-#products {
-    background: linear-gradient(135deg, #fdfbfb, #f9e79f); /* Subtle soft yellow gradient */
+#services {
+    background: linear-gradient(135deg, #f6f9fc, #e3f2fd); /* Light gradient */
+    color: #333;
+    padding: 2rem;
 }
 
-.product-container {
+.service-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.product {
-    background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient */
-    color: white;
+.service {
+    background: linear-gradient(135deg, #ffffff, #dfe9f3);
+    color: #333;
     padding: 1rem;
-    width: 200px;
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 3D shadow */
-    transition: transform 0.3s, box-shadow 0.3s;
-    transform-style: preserve-3d;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.product:hover {
-    transform: scale(1.05) rotateX(5deg) rotateY(5deg); /* 3D hover effect */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+.service:hover {
+    transform: scale(1.05) rotateX(3deg);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
 
-.product h3 {
-    margin: 0;
+.service h3 {
+    margin: 0.5rem 0;
     font-size: 1.2rem;
+}
+
+.service p {
+    font-size: 0.95rem;
 }
 
 #about {
